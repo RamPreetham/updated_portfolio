@@ -1,0 +1,58 @@
+
+
+/* Logo */
+.logo {
+  padding-left: 5%;
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+  position: absolute;
+  justify-content: left;
+  z-index: 2;
+  transition: 0.3s ease-in-out all;
+}
+
+.logo:hover{
+  color: rgb(167, 139, 47);
+
+}
+
+/* Navigation */
+.nav {
+  display:flex;
+  justify-content:flex-end;
+  padding-top: 5px;
+  align-items:center;
+  justify-items:right;
+  position: relative;
+  z-index: 1;
+}
+
+.nav:hover{
+  color:  rgb(167, 139, 47);
+}
+.nav a {
+  color: whitesmoke;
+  text-justify: distribute-all-lines;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: rgb(167, 139, 47);
+}
+
+/* blackbackground */
+.bg-ornage-grey {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 0;
+}
+
+
