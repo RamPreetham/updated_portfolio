@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:100px;
+  position:absolute;
+  width:100%;
+  left: 35%;
+  top: 50px;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 10s linear infinite;
+}
+
+#flip div div {
+  background:rgba(102,126,234,1);
+}
+#flip div:first-child div {
+  background:rgb(101, 79, 131);
+}
+#flip div:last-child div {
+  background:rgb(119, 73, 165);
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+.About-Me{
+  text-align: left;
+  position:absolute;
+  width:100%;
+  top: 100px;
+  font-size:18px;
+  color:#ffffff;
+  margin-top:200px;
+}
+
+
+
+.circular--landscape {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow:hidden;
+  border-radius: 70%;
+ }
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+}
+
+
+#about-me-header::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#about-me-header:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#about-me-header::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background:linear-gradient(to left, rgba(102,126,234,1), rgba(118,75,162,1));
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: transform .5s ease-in-out;
+}
+
+#about-me-header {
+  position: relative;
+  font-size: 24px;
+  margin-left: 2%;
+}
+
+.About-Me p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin-left: 5%;
+  justify-content: center;
+}
