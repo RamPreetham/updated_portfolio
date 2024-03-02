@@ -1,7 +1,13 @@
-html { overflow-y: scroll;}
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 body{
   background-image: url("../assets/images/peakpx.jpg");
-  background-size:cover;
+  background-size:contain;
   height: auto;
-  width: auto;
+  width:fit-content;
 }
