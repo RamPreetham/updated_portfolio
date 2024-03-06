@@ -42,13 +42,13 @@ body {
 }
 
 #flip div div {
-  background:rgba(102,126,234,1);
+  background:rgb(112, 109, 109);
 }
 #flip div:first-child div {
-  background:rgb(101, 79, 131);
+  background:rgb(112, 109, 109);
 }
 #flip div:last-child div {
-  background:rgb(119, 73, 165);
+  background:rgb(112, 109, 109);
 }
 
 @keyframes show {
@@ -107,12 +107,17 @@ body {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
-  background:linear-gradient(to left, rgba(102,126,234,1), rgba(118,75,162,1));
+  background:black;
   background-repeat: no-repeat;
   z-index: -1;
   transition: transform .5s ease-in-out;
 }
 
+.h2
+{
+  align-items: center;
+  justify-content: center;
+}
 #about-me-header {
   position: relative;
   margin-top: 5%;
@@ -120,6 +125,27 @@ body {
   font-size: 30px;
   margin-left: 0.2%;
   cursor: pointer;
+  --😀:#f8f9fa ;
+  --😀😀: rgb(112, 109, 109);
+  --😀😀😀: black;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgb(112, 109, 109);
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
 }
 
 .About-Me p{
@@ -129,7 +155,7 @@ body {
   font-size: 20px;
   top: 0%;
   margin-top: 0%;
-  text-shadow: 5px 2px 10px rgb(118, 203, 243), 0px 5px 15px rgb(209, 106, 223);
+  text-shadow: 0px 2px 5px rgb(112, 109, 109), 0px 0px 5px whitesmoke;
   margin-left: 5%;
   justify-content: center;
 }
@@ -147,22 +173,38 @@ body {
 .column {
   flex: 50%;
   padding: 10px;
-  background-color: #9850c9;
+  background-color: rgb(112, 109, 109);
   height: 256; /* Should be removed. Only for demonstration */
 }
 
 .left{
   width: 50%;
-  background-color: rgba(102,126,234,1);
+  background-color: white;
   height: 400px;
   top: 0%;
 }
 
 .left img{
-  margin-left: 5%;
-  border-radius: 50%;
+  margin-left: 22.5%;
   margin-bottom: 2%;
 
+}
+.rounded-circle{
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+.animate {
+  animation: pulse 1s infinite alternate; /* Apply animation to the element */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 .right{
   text-align: left;
@@ -233,12 +275,14 @@ body {
 }
 .signature_head{
   font-size: 28px;
+  text-shadow: 0px 0px 10px black;
   font-family: 'helvetica', san-serif;
 }
 
 .usp__list{
   list-style-type: none;
   position: relative;
+  text-shadow: 0px 0px 10px black;
   text-align: center;
   font-size: 28px;
 }
