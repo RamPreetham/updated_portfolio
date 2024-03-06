@@ -6,13 +6,14 @@ import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from "./header/header.component";
+import { ContactComponent } from "./contact/contact.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, HeaderComponent]
+    imports: [RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, HeaderComponent, ContactComponent]
 })
 
 
