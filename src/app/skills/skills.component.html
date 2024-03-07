@@ -1,1 +1,49 @@
-<p>skills works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header"><h2>Skills</h2></div>
+  <div class="cards">
+    <div class="card s1">
+        <p class="tip">Front End Development</p>
+        <ul class="parentlist">
+          <div *ngFor="let fskill of frontendskills" class="fkill">
+          <li>
+            <p>{{ fskill.name }}</p>
+            <p>{{ fskill.experience}}</p>
+          </li>
+        </div>
+
+        </ul>
+    </div>
+    <div class="card s2">
+        <p class="tip">Back End Development</p>
+        <ul class="parentlist">
+          <div *ngFor="let bskill of Backendskills" class="bskill">
+            <li>
+              <p>{{ bskill.name }}</p>
+              <p>{{bskill.experience}}</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+    <div class="card s3">
+        <p class="tip">Cloud and Tools</p>
+        <ul class="parentlist">
+          <div *ngFor="let tools of Tools" class="tools">
+            <li>
+              <p>{{ tools.name }}</p>
+              <p>{{tools.experience}}</p>
+            </li>
+          </div>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
