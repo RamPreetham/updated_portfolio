@@ -1,70 +1,20 @@
 
-.header{
-  display: absolute;
+.heading{
+  position: absolute;
+  display:block;
+  margin-left: -39%;
+  font-size: 34px;
   top: 0%;
   color: #FFF;
-  position: absolute;
   padding: 1% 1% 1% 1%;
   width: 100%;
   height: 50px;
   z-index: 0;
+  font-family: 'helvetica', 'san-serif';
+  text-shadow: 0px 0px 5px rgb(112, 109, 109), 0px 0px 10px black;
 
 }
 
-/* Logo */
-.logo {
-  font-size: 24px;
-  top: 2%;
-  overflow: hidden;
-  left: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 2%;
-  font-weight: bold;
-  color: #FFF;
-  text-decoration:none;
-  position: absolute;
-  text-align: left;
-  transition: 0.3s ease-in-out all;
-}
-
-.logo.circleBehind a:before, .logo.circleBehind a:after
-{
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 4px solid rgba(102,126,234,1);
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 50%;
-    background: transparent;
-    text-decoration: none;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-    z-index: -1;
-}
-
-.logo.circleBehind a:after
-{
-    border-width: 1px;
-    text-decoration: none;
-    transition: all 0.4s;
-}
-
-.logo.circleBehind a:hover:before
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1);
-    text-decoration: none;
-}
-
-.logo.circleBehind a:hover:after
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1.3);
-    text-decoration: none;
-}
 
 /* Navigation */
 .nav {
@@ -79,7 +29,7 @@
 .nav a {
   color: whitesmoke;
   display: inline-block;
-
+  font-family: 'helvetica', 'san-serif';
   text-decoration: none;
   cursor: pointer;
   text-decoration:none;

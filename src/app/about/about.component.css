@@ -7,9 +7,15 @@ body {
   text-align:center;
 }
 
+.cv{
+  text-decoration: none;
+  color: inherit;
+}
+
 #container-flip {
   color:#ffffff;
   text-transform: uppercase;
+  font-family: 'helvetica', san-serif;
   font-size:  36px;
   text-align: center;
   font-weight:bold;
@@ -66,9 +72,9 @@ body {
   text-align: left;
   position:relative;
   width:100%;
-  bottom: 100px;
+  bottom: 200px;
   top:1px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   font-size:18px;
   color:#ffffff;
   margin-top:200px;
@@ -119,6 +125,7 @@ body {
   justify-content: center;
 }
 #about-me-header {
+  font-family: 'helvetica', san-serif;
   position: relative;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -155,7 +162,7 @@ body {
   font-size: 20px;
   top: 0%;
   margin-top: 0%;
-  text-shadow: 0px 2px 5px rgb(112, 109, 109), 0px 0px 5px whitesmoke;
+  text-shadow: 0px 0px 2px rgb(112, 109, 109), 0px 0px 3px whitesmoke;
   margin-left: 5%;
   justify-content: center;
 }
@@ -163,8 +170,8 @@ body {
 /* Create two equal columns that floats next to each other */
 .row {
   position: relative;
-  height: 512px;
-  padding-bottom: 200px;
+  height: 450px;
+  padding-bottom: 100px;
   margin-top: 5%;
   display: flex;
 }
@@ -174,43 +181,18 @@ body {
   flex: 50%;
   padding: 10px;
   background-color: rgb(112, 109, 109);
-  height: 256; /* Should be removed. Only for demonstration */
 }
 
 .left{
   width: 50%;
   background-color: white;
-  height: 400px;
+  height: 450px;
   top: 0%;
 }
 
 .left img{
-  margin-left: 22.5%;
   margin-bottom: 2%;
 
-}
-.rounded-circle{
-  background-size: cover;
-  border-radius: 50%;
-  transition: transform 0.5s ease;
-}
-.animate {
-  animation: pulse 1s infinite alternate; /* Apply animation to the element */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-.right{
-  text-align: left;
-  padding-left: 2%;
-  height: 400px;
-  width: 50%;
 }
 
 
@@ -239,6 +221,7 @@ body {
   position: relative;
   width: 100%;
   opacity: 0;
+  font-family: 'helvetica', san-serif;
 }
 
 .usp__list li:nth-of-type(1) {
@@ -287,3 +270,34 @@ body {
   font-size: 28px;
 }
 
+
+/**** Contact Me Button****************/
+
+ .comic-button {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color:  rgb(112, 109, 109);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: rgb(112, 109, 109);
+  border: 2px solid  rgb(112, 109, 109);
+  box-shadow: 5px 5px 0px  rgb(112, 109, 109);
+}
+
+.comic-button:active {
+  background-color: green;
+  box-shadow: none;
+  transform: translateY(4px);
+}
