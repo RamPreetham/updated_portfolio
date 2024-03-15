@@ -1,0 +1,301 @@
+.row {
+  position: relative;
+  height: 320px;
+  padding-bottom: 520px;
+  border-radius: 10px;
+  margin-top: 15%;
+  display: flex;
+  overflow: hidden;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  background-color:rgb(112, 109, 109);
+  height: 512px; /* Should be removed. Only for demonstration */
+}
+
+.left{
+  width: 30%;
+  background-color:  #f2f2f2;
+  height: 512px;
+  top: 0%;
+}
+
+.right{
+  width: 70%;
+}
+
+#container-contact{
+  width: 100%;
+  height:600px;
+}
+
+.contact-form {
+  font-family: 'helvetica', 'san-serif';
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #f2f2f2;
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  padding: 25px 25px 25px 25px;
+  overflow: hidden;
+}
+
+.contact-form:hover{
+  box-shadow: 5px 2px 5px rgb(112, 109, 109), 0px 5px 10px whitesmoke;
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.contact-form label {
+  font-family: 'helvetica', 'san-serif';
+  color: black;
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  font-family: 'helvetica', 'san-serif';
+  margin-bottom: 5%;
+  top: 15%;
+  font-size: 30px;
+  margin-left: 0.2%;
+  text-align: left;
+  cursor: pointer;
+  --😀:#f8f9fa ;
+  --😀😀: rgb(112, 109, 109);
+  --😀😀😀: black;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgb(112, 109, 109);
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.heading::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.heading:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.heading::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  pointer-events: stroke;
+  inset: 0 0 0 0;
+  background:black;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: transform .5s ease-in-out;
+}
+
+.contact-form form {
+  display: inline-flex;
+  flex-direction: column;
+
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 5px 2px 5px rgb(112, 109, 109), 0px 5px 10px whitesmoke;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Social Links */
+
+.main {
+  position: relative;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(112, 109, 109);
+  border-radius: 120px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.gmail {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: red;
+}
+
+.card2 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(112, 109, 109);
+  border-radius: 5px 120px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
+}
+
+.card3 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(112, 109, 109);
+  border-radius: 5px 5px 5px 120px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(112, 109, 109);
+  border-radius: 5px 5px 120px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: red;
+}
+
+.card1:hover .gmail {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0077b5;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
