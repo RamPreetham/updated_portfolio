@@ -1,16 +1,22 @@
 
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+  html {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 1000px;
+
+
+  }
+
 
 
 body{
-  width: 100%;
+  resize: both;
+  max-width: 1000px;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+
+
 
   /* Dark mode colors and gradient */
   background: #121212; /* Fallback for browsers that don't support gradients */

@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+  heading= "Some of My Notable Works..";
   projects = [
     {
       name: 'Apex Gaming Website',

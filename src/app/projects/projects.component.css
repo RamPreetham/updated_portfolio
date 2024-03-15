@@ -24,7 +24,7 @@
 .header{
   position: relative;
   font-family: 'helvetica', 'san-serif';
-  margin-bottom: 5%;
+  margin-bottom: 1.5%;
   top: 10%;
   font-size: 30px;
   margin-left: 0.2%;
@@ -51,6 +51,19 @@
   transform: skew(-10deg);
   transition: all .1s ease;
   filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+#projects-heading{
+  position: relative;
+  text-align: justify;
+  font-family: 'helvetica', san-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 5%;
+  top: 0%;
+  margin-top: 0%;
+  text-shadow: 0px 0px 2px rgb(112, 109, 109), 0px 0px 3px whitesmoke;
+  margin-left: 5%;
 }
 .projects{
   position: relative;
