@@ -27,9 +27,9 @@ export class ProjectsComponent {
       image: '../../assets/images/Tableau_Dashboards.jpg'
     },
     {
-      name: 'Cards_Visualizations',
+      name: 'PSD_to_HTML',
       url: 'https://github.com/RamPreetham/Expanding_cards',
-      image: '../../assets/images/Dragonball.jpg'
+      image: '../../assets/images/PSD-to-HTML-Using-Bootstrap.jpg'
 
     },
     {

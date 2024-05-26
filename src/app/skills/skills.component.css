@@ -1,167 +1,79 @@
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.fskill {
-  width: 50%; /* Display two skills per row on larger screens */
-  padding: 10px;
+.header {
+  text-align: center;
+  margin: 20px 0;
 }
 
-@media (max-width: 768px) {
-  .fskill {
-    width: 100%; /* Display one skill per row on smaller screens */
-  }
+.header h2 {
+  font-size: 2em;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
 }
 
-
-
-/*Header*/
-
-.header::before {
-  transform: scaleX(0);
-  transform-origin: bottom right;
+#skills-heading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
-
-.header:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.header::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  pointer-events: stroke;
-  inset: 0 0 0 0;
-  background:black;
-  color: #fff;
-  background-repeat: no-repeat;
-  z-index: -1;
-  transition: transform .5s ease-in-out;
-}
-.header{
-  position: relative;
-  font-family: 'helvetica', 'san-serif';
-  margin-bottom: 5%;
-  top: 10%;
-  font-size: 30px;
-  margin-left: 0.2%;
-  text-align: left;
-  cursor: pointer;
-  --😀:#f8f9fa ;
-  --😀😀: rgb(112, 109, 109);
-  --😀😀😀: black;
-  cursor: pointer;
-  width: 184px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.125em;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: rgb(112, 109, 109);
-  background: var(--😀);
-  border: 2px solid var(--😀😀);
-  border-radius: .75rem;
-  box-shadow: 0 8px 0 var(--😀😀);
-  transform: skew(-10deg);
-  transition: all .1s ease;
-  filter: drop-shadow(0 15px 20px var(--😀😀😀));
-}
-
-#skills-heading{
-  position: relative;
-  text-align: justify;
-  font-family: 'helvetica', 'san-serif';
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 5%;
-  top: 0%;
-  margin-top: 0%;
-  text-shadow: 0px 0px 2px rgb(112, 109, 109), 0px 0px 3px whitesmoke;
-  margin-left: 5%;
-}
-
-.parentlist{
-  list-style-type:square;
-  align-items: start;
-  justify-content: left;
-}
-
 
 .cards {
   display: flex;
-  font-family: 'helvetica', 'san-serif';
-  width: 90%;
-  margin-top: 10%;
-  margin-left: 10%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 2.5%;
-  text-shadow: 5px 2px 5px black;
-  margin-bottom:  15%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.cards .s1 {
-  background-color: rgb(171, 167, 167);
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  z-index: 1;
 }
 
-.cards .s2 {
-  background-color: rgb(105, 103, 103);
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
-.cards .s3 {
-  background-color: rgb(59, 58, 58);
+.cards:hover .card:not(:hover) {
+  filter: blur(5px);
 }
 
-.cards .card {
-  padding-top: 2.5%;
-  margin-top: 2.5%;
-  size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-direction: column;
-  text-align: left;
-  height: 800px;
-  width: 400px;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  transition: 400ms;
+.tip {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.card .card p{
-  align-items: start;
-  justify-content: left;
-
-}
-.cards .card p.tip {
-  margin-top: 2.5%;
-  font-family: 'helvetica', 'san-serif';
-  margin-bottom: 2.5%;
-  padding-bottom: 2.5%;
-  background-color: black;
-  border-radius: 10px;
-  font-size: 28px;
-  font-weight: 700;
-  text-shadow: 5px 2px 5px rgb(112, 109, 109), 0px 5px 10px whitesmoke
+.parentlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cards .card p.second-text {
-  font-size: .7em;
+.parentlist li {
+  margin: 10px 0;
 }
 
-.cards .card:hover {
-  transform: scale(1.2, 1.2);
-}
-
-.cards:hover > .card:not(:hover) {
-  filter: blur(10px);
-  transform: scale(0.9, 0.9);
+.parentlist p {
+  margin: 5px 0;
 }

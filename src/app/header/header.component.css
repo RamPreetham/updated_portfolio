@@ -1,109 +1,53 @@
-
-/* General Reset */
-
-
-/* Header */
 .header {
-  left: 10%;
-  background-color:  rgb(112, 109, 109);
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
-.heading {
-  display: inline-block;
-  position: relative;
-  font-size: 2rem; /* Adjust size as needed */
-  color: #FFF;
-  font-family: 'Helvetica', 'sans-serif';
-  text-shadow: 0px 0px 5px rgb(112, 109, 109), 0px 0px 10px black;
-  text-align: left;
+.header .heading {
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
-/* Navigation */
 .nav {
-  text-align: right;
-  position: relative;
-  display: inline-block;
-  background-color:  rgb(112, 109, 109);
-
+  display: flex;
+  gap: 15px;
 }
 
 .nav a {
-  color: whitesmoke;
-  font-size: 2rem; /* Adjust size as needed */
-  left: 60%;
+  color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
+  font-size: 1em;
   position: relative;
-  z-index: 0;
+  padding: 10px;
 }
 
-/* Top and Bottom borders go out */
-.nav a:before, .nav a:after {
+.nav a::after {
+  content: '';
   position: absolute;
-  left: 0;
+  width: 0;
   height: 2px;
-  background: #FFF;
-  content: "";
-  opacity: 0;
-  transition: all 0.2s;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.3s ease, right 0.3s ease;
 }
 
-.nav a:before {
-  top: 0;
-  transform: translateY(15px);
+.nav a:hover::after {
+  width: 100%;
+  right: 0;
 }
 
-.nav a:after {
-  bottom: 0;
-  transform: translateY(-15px);
+.nav a.active::after {
+  width: 100%;
+  right: 0;
 }
 
-.nav a:hover:before, .nav a:hover:after {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .heading {
-      font-size: 1.5rem; /* Adjust size as needed */
-  }
-
-  .nav a {
-      font-size: 0.9rem; /* Adjust size as needed */
-  }
-}
-
-
-
-/* Top and Bottom borders go out */
-nav.topBotomBordersOut a:before, nav.topBotomBordersOut a:after
-{
-    position:absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.2s;
-}
-
-nav.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(15px);
-}
-
-nav.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-15px);
-}
-
-nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
-{
-    opacity: 2;
-    transform: translateY(0px);
+.nav i {
+  margin-right: 5px;
 }

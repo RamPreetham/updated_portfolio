@@ -1,48 +1,71 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
 
-  html {
-    min-width: 100%;
-    min-height: 100%;
+#about, #experience, #projects, #contact, app-skills {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#about, #experience, #projects, #contact, app-skills {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+app-header, app-about, app-experience, app-projects, app-skills, app-contact {
+  display: block;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  #about, #experience, #projects, #contact, app-skills {
     max-width: 1000px;
-
-
-  }
-
-
-
-body{
-  resize: both;
-  max-width: 1000px;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-
-
-
-  /* Dark mode colors and gradient */
-  background: #121212; /* Fallback for browsers that don't support gradients */
-  background: linear-gradient(
-    135deg,
-    #121212 25%,
-    #1a1a1a 25%,
-    #1a1a1a 50%,
-    #121212 50%,
-    #121212 75%,
-    #1a1a1a 75%,
-    #1a1a1a
-  );
-  background-size: 40px 40px;
-
-  /* Animation */
-  animation: move 4s linear infinite;
-}
-
-@keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 40px 40px;
+    padding: 15px;
   }
 }
 
+@media screen and (max-width: 992px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 800px;
+    padding: 10px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 600px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #about, #experience, #projects, #contact, app-skills {
+    max-width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+  }
+}
+
+/* Additional Styles */
+body {
+  background-color: #f4f4f9;
+}
+
+#about, #experience, #projects, #contact, app-skills {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  #about, #experience, #projects, #contact, app-skills {
+    margin-bottom: 10px;
+  }
+}
