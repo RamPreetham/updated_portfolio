@@ -1,7 +1,6 @@
-
-
-
-
+.about{
+  margin-bottom: 25px;
+}
 .e-card {
   text-align: center;
   margin-bottom: 20px;
@@ -9,6 +8,7 @@
 
 .infotop {
   margin-bottom: 20px;
+  text-align: end;
 }
 
 .icon {
@@ -30,12 +30,13 @@
   font-size: 2em;
   margin: 20px 20px 20px 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #576574;
   display: inline-block;
 }
 
 .About-Me .line-1 {
   margin: 20px 0;
+  color: #576574;
   font-size: 1.1em;
 }
 
@@ -51,6 +52,9 @@
 
 .column.left {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .column.left img {
@@ -58,15 +62,25 @@
   margin-bottom: 20px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
 .comic-button {
-  background-color: #007bff;
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 5px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  flex: 1;
+  text-align: center;
 }
 
 .comic-button a {
@@ -75,7 +89,8 @@
 }
 
 .comic-button:hover {
-  background-color: #0056b3;
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c0aa5e 0%, #415c79 74%);
 }
 
 .signature_head {
@@ -89,9 +104,13 @@
 }
 
 .usp__item {
-  background-color: #007bff;
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
   color: #fff;
   padding: 10px;
+  width:70%;
   margin: 5px 0;
   border-radius: 5px;
 }
+
+

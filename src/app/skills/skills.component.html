@@ -6,8 +6,8 @@
         <ul class="parentlist">
           <div *ngFor="let fskill of frontendskills" class="fkill">
           <li>
-            <p>{{ fskill.name }}</p>
-            <p>{{ fskill.experience}}</p>
+            <p>{{ fskill.name }} - {{ fskill.experience}} </p>
+            <p></p>
           </li>
         </div>
 
@@ -18,8 +18,8 @@
         <ul class="parentlist">
           <div *ngFor="let bskill of Backendskills" class="bskill">
             <li>
-              <p>{{ bskill.name }}</p>
-              <p>{{bskill.experience}}</p>
+              <p>{{ bskill.name }} - {{bskill.experience}}</p>
+              <p></p>
             </li>
           </div>
         </ul>
@@ -29,13 +29,14 @@
         <ul class="parentlist">
           <div *ngFor="let tools of Tools" class="tools">
             <li>
-              <p>{{ tools.name }}</p>
-              <p>{{tools.experience}}</p>
+              <p>{{ tools.name }} - {{tools.experience}}</p>
+              <p></p>
             </li>
           </div>
 
         </ul>
     </div>
 </div>
+
 
 

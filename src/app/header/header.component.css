@@ -1,5 +1,6 @@
 .header {
-  background-color: #007bff;
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
   color: #fff;
   padding: 20px;
   display: flex;
@@ -7,6 +8,7 @@
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .header .heading {
   font-size: 1.8em;

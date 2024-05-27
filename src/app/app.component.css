@@ -8,16 +8,16 @@ body {
 
 #about, #experience, #projects, #contact, app-skills {
   padding: 20px;
+  position: relative;
   margin: 20px 0;
 }
 
 #about, #experience, #projects, #contact, app-skills {
   width: 100%;
   max-width: 1200px;
+  max-height: fit-content;
   margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  border-radius: 8px;
+  background-color: transparent;
   padding: 20px;
 }
 
@@ -29,6 +29,7 @@ app-header, app-about, app-experience, app-projects, app-skills, app-contact {
 @media screen and (max-width: 1200px) {
   #about, #experience, #projects, #contact, app-skills {
     max-width: 1000px;
+    max-height: fit-content;
     padding: 15px;
   }
 }
@@ -36,6 +37,7 @@ app-header, app-about, app-experience, app-projects, app-skills, app-contact {
 @media screen and (max-width: 992px) {
   #about, #experience, #projects, #contact, app-skills {
     max-width: 800px;
+    max-height: fit-content;
     padding: 10px;
   }
 }

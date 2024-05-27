@@ -12,7 +12,7 @@ export class ProjectsComponent {
   heading= "Some of My Notable Works..";
   projects = [
     {
-      name: 'Apex Gaming Website',
+      name: 'Apex-Gaming Trade Website',
       url: 'https://github.com/RamPreetham/GamingWebsite',
       image: '../../assets/images/Apex_gaming.jpg'
     },
