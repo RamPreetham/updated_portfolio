@@ -1,101 +1,154 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-body {
-  width: 100%;
-  margin:0px;
-  font-family:'Roboto';
-  text-align:center;
-}
 
-.cv{
+
+.cv {
   text-decoration: none;
   color: inherit;
 }
 
+.about{
+  width: 1200px;
+  margin: auto;
+}
 #container-flip {
-  color:#ffffff;
+  top: 0;
+  color: #ffffff;
   text-transform: uppercase;
-  font-family: 'helvetica', san-serif;
-  font-size:  36px;
+  font-family: 'helvetica', 'sans-serif'; /* Adjust font size using viewport width */
   text-align: center;
-  font-weight:bold;
-  position:relative;
-  left: 40%;
-  right: 0%;
-  margin: 10px 10px 10px 10px;
-  width:100%;
-  display:block;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  left: 20%;
+  width: 1200px;
 }
 
-#flip {
-  top: 0%;
-  bottom: 10%;
-  height: 50px;
-  overflow:hidden;
+.content__container {
+    position: relative;
+    height: 40px;
+    width: auto;
+    margin-top: 125px;
+    overflow: hidden;
+}
+.content__container__text {
+    position: absolute;
+    margin-left: 41%;
+    margin-top: 0px;
+}
+.content__container__list {
+    position: absolute;
+    list-style-type: none;
+    margin-left: 40%;
+    animation-name: trans;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    margin-top: 0px;
+}
+@keyframes opacity{
+  0%,50%{opacity:0;color:#1D1F20;}
+}
+@keyframes trans {
+  0%, 14.66%{transform:translateY(0%)}
+  16.66%, 31.32% {transform:translateY(-25%)}
+  33.32%,47.98% {transform:translateY(-50%)}
+  49.98%,64.64% {transform:translateY(-75%)}
+  66.64%,81.30% {transform:translateY(-50%)}
+  83.30%,97.96% {transform:translateY(-25%)}
 }
 
-#flip > div > div {
-  color:#fff;
-  padding:4px 12px;
-  height: 45px;
-  bottom: 20%;
-  margin-bottom:45px;
-  display:inline-block;
+@media screen and (max-width: 768px) {
+  #container-flip {
+    font-size: 3vw;
+  }
+
+  .content__container {
+    height: 8vw;
+    margin-top: 10vh;
+  }
+
+  .content__container__text {
+    margin-left: 35%;
+  }
+
+  .content__container__list {
+    margin-left: 34%;
+  }
 }
 
-#flip div:first-child {
-  animation: show 10s linear infinite;
+@media screen and (max-width: 480px) {
+  #container-flip {
+    font-size: 4vw;
+  }
+
+  .content__container {
+    height: 12vw;
+    margin-top: 8vh;
+  }
+
+  .content__container__text {
+    margin-left: 30%;
+  }
+
+  .content__container__list {
+    margin-left: 29%;
+  }
 }
 
-#flip div div {
-  background:rgb(112, 109, 109);
-}
-#flip div:first-child div {
-  background:rgb(112, 109, 109);
-}
-#flip div:last-child div {
-  background:rgb(112, 109, 109);
-}
-
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
-.About-Me{
+.About-Me {
   text-align: left;
-  position:relative;
-  width:100%;
-  bottom: 200px;
-  top:1px;
-  margin-bottom: 150px;
-  font-size:18px;
-  color:#ffffff;
-  margin-top:200px;
+  position: relative;
+  width: 100%;
+  bottom: 20vh; /* Adjust position using viewport height */
+  top: 1px;
+  margin-bottom: 15vh; /* Adjust margin using viewport height */
+  font-size: 1.5vw; /* Adjust font size using viewport width */
+  color: #ffffff;
+  margin-top: 20vh; /* Adjust margin using viewport height */
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #container-flip {
+    font-size: 4vw; /* Adjust font size using viewport width */
+  }
 
+  .About-Me {
+    font-size: 2vw; /* Adjust font size using viewport width */
+    bottom: 15vh; /* Adjust position using viewport height */
+    margin-bottom: 10vh; /* Adjust margin using viewport height */
+    margin-top: 15vh; /* Adjust margin using viewport height */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #container-flip {
+    font-size: 6vw; /* Adjust font size using viewport width */
+  }
+
+  .About-Me {
+    font-size: 3vw; /* Adjust font size using viewport width */
+    bottom: 10vh; /* Adjust position using viewport height */
+    margin-bottom: 5vh; /* Adjust margin using viewport height */
+    margin-top: 10vh; /* Adjust margin using viewport height */
+  }
+}
+
+/* Add additional styles and media queries as needed for different elements */
 
 .circular--landscape {
   display: inline-block;
   position: absolute;
   width: 200px;
   height: 200px;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 70%;
- }
+}
 
 .circular--landscape img {
   width: auto;
   height: 100%;
 }
-
 
 #about-me-header::before {
   transform: scaleX(0);
@@ -111,19 +164,22 @@ body {
   content: " ";
   display: block;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background:black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  background: black;
   background-repeat: no-repeat;
   z-index: -1;
   transition: transform .5s ease-in-out;
 }
 
-.h2
-{
+.h2 {
   align-items: center;
   justify-content: center;
 }
+
 #about-me-header {
   font-family: 'helvetica', san-serif;
   position: relative;
@@ -132,7 +188,7 @@ body {
   font-size: 30px;
   margin-left: 0.2%;
   cursor: pointer;
-  --😀:#f8f9fa ;
+  --😀: #f8f9fa;
   --😀😀: rgb(112, 109, 109);
   --😀😀😀: black;
   cursor: pointer;
@@ -155,8 +211,7 @@ body {
   filter: drop-shadow(0 15px 20px var(--😀😀😀));
 }
 
-.About-Me p{
-  position: relative;
+.About-Me p {
   text-align: justify;
   font-family: 'helvetica', san-serif;
   font-size: 20px;
@@ -167,45 +222,72 @@ body {
   justify-content: center;
 }
 
-/* Create two equal columns that floats next to each other */
-.row {
-  position: relative;
-  height: 450px;
-  padding-bottom: 100px;
-  margin-top: 5%;
-  display: flex;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .circular--landscape {
+    width: 150px;
+    height: 150px;
+  }
+
+  #about-me-header {
+    font-size: 24px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .About-Me p {
+    font-size: 16px;
+  }
 }
 
-/* Create two equal columns that sits next to each other */
+@media screen and (max-width: 480px) {
+  .circular--landscape {
+    width: 120px;
+    height: 120px;
+  }
+
+  #about-me-header {
+    font-size: 20px;
+    width: 120px;
+    height: 32px;
+  }
+
+  .About-Me p {
+    font-size: 14px;
+  }
+}
+
+.row {
+  position: relative;
+  height: auto; /* Change height to auto for responsiveness */
+  padding-bottom: 5%; /* Adjust padding using viewport height */
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to next line if necessary */
+}
+
 .column {
-  flex: 50%;
-  padding: 10px;
+  flex: 1; /* Equal width columns */
+  padding: 1%; /* Adjust padding using percentage */
   background-color: rgb(112, 109, 109);
 }
 
-.left{
-  width: 50%;
+.left {
+  width: 100%; /* Full width for smaller screens */
   background-color: white;
-  height: 450px;
-  top: 0%;
+  height: auto; /* Change height to auto for responsiveness */
 }
 
-.left img{
+.left img {
   margin-bottom: 2%;
-
+  max-width: 100%; /* Ensure image doesn't exceed parent width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-
-/* Signature Heading list*/
+/* Signature Heading list */
 
 @keyframes fadein {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
     opacity: 0;
   }
   100% {
@@ -216,75 +298,76 @@ body {
 .usp__list li {
   list-style: none;
   padding-top: 0%;
-  font-size: 28px;
+  font-size: 2vw; /* Adjust font size using viewport width */
   margin-left: 0%;
   position: relative;
   width: 100%;
   opacity: 0;
-  font-family: 'helvetica', san-serif;
+  font-family: 'helvetica', sans-serif;
 }
 
 .usp__list li:nth-of-type(1) {
   animation: fadein 8s ease-in-out 0s infinite alternate;
 }
 
-.usp__list  li:nth-of-type(2) {
-  animation: fadein 8s ease-in-out 2s infinite alternate;
+.usp__list li:nth-of-type(2) {
+  animation: fadein 8s ease-in-out 1s infinite alternate;
 }
 
 .usp__list li:nth-of-type(3) {
+  animation: fadein 8s ease-in-out 2s infinite alternate;
+}
+
+.usp__list li:nth-of-type(4) {
+  animation: fadein 8s ease-in-out 3s infinite alternate;
+}
+
+.usp__list li:nth-of-type(5) {
   animation: fadein 8s ease-in-out 4s infinite alternate;
 }
 
-.usp__list  li:nth-of-type(4) {
+.usp__list li:nth-of-type(6) {
+  animation: fadein 8s ease-in-out 5s infinite alternate;
+}
+
+.usp__list li:nth-of-type(7) {
   animation: fadein 8s ease-in-out 6s infinite alternate;
 }
 
-.usp__list  li:nth-of-type(5) {
-  animation: fadein 8s ease-in-out 8s infinite alternate;
-}
-
-.usp__list  li:nth-of-type(6) {
-  animation: fadein 8s ease-in-out 10s infinite alternate;
-}
-
-.usp__list  li:nth-of-type(7) {
-  animation: fadein 8s ease-in-out 12s infinite alternate;
-}
 .usp__item {
-  font-family:'helvetica', san-serif ;
-  display:-moz-grid-line;
+  font-family: 'helvetica', sans-serif;
+  display: block;
   position: relative;
 }
-.signature_head{
-  font-size: 28px;
-  text-shadow: 0px 0px 10px black;
-  font-family: 'helvetica', san-serif;
+
+.signature_head {
+  font-size: 2vw; /* Adjust font size using viewport width */
+  text-shadow: 0px 0px 1vw black; /* Adjust shadow using viewport width */
+  font-family: 'helvetica', sans-serif;
 }
 
-.usp__list{
+.usp__list {
   list-style-type: none;
   position: relative;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 1vw black; /* Adjust shadow using viewport width */
   text-align: center;
-  font-size: 28px;
+  font-size: 2vw; /* Adjust font size using viewport width */
 }
 
+/* Contact Me Button */
 
-/**** Contact Me Button****************/
-
- .comic-button {
+.comic-button {
   display: inline-block;
-  margin-left: 10px;
-  font-size: 24px;
+  margin: 1%;
+  font-size: 1.5vw; /* Adjust font size using viewport width */
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color:  rgb(112, 109, 109);
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 5px 5px 0px #000;
+  background-color: rgb(112, 109, 109);
+  border: 0.2vw solid #000; /* Adjust border using viewport width */
+  border-radius: 1vw; /* Adjust border radius using viewport width */
+  box-shadow: 0.5vw 0.5vw 0px #000; /* Adjust box shadow using viewport width */
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -292,12 +375,42 @@ body {
 .comic-button:hover {
   background-color: #fff;
   color: rgb(112, 109, 109);
-  border: 2px solid  rgb(112, 109, 109);
-  box-shadow: 5px 5px 0px  rgb(112, 109, 109);
+  border: 0.2vw solid rgb(112, 109, 109); /* Adjust border using viewport width */
+  box-shadow: 0.5vw 0.5vw 0px rgb(112, 109, 109); /* Adjust box shadow using viewport width */
 }
 
 .comic-button:active {
   background-color: green;
   box-shadow: none;
-  transform: translateY(4px);
+  transform: translateY(0.5vw); /* Adjust transformation using viewport width */
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 1 100%; /* Full width for smaller screens */
+    padding: 2%; /* Adjust padding using percentage */
+  }
+
+  .usp__list li {
+    font-size: 3vw; /* Adjust font size using viewport width */
+  }
+
+  .signature_head {
+    font-size: 3vw; /* Adjust font size using viewport width */
+    text-shadow: 0px 0px 2vw black; /* Adjust shadow using viewport width */
+  }
+
+  .usp__list {
+    font-size: 3vw; /* Adjust font size using viewport width */
+    text-shadow: 0px 0px 2vw black; /* Adjust shadow using viewport width */
+  }
+
+  .comic-button {
+    font-size: 3vw; /* Adjust font size using viewport width */
+    border: 0.2vw solid rgb(112, 109, 109); /* Adjust border using viewport width */
+    border-radius: 2vw; /* Adjust border radius using viewport width */
+    box-shadow: 1vw 1vw 0px #000; /* Adjust box shadow using viewport width */
+  }
 }

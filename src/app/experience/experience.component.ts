@@ -10,12 +10,12 @@ import { Component } from '@angular/core';
 })
 export class ExperienceComponent {
 
-
+  heading = "Experienced Full Stack Developer Crafting Innovative Solutions for the Digital Age.."
   experiences = [
     {
       company: 'Mckesson',
       position: 'Java AWS Developer',
-      duration: 'June 2023 - Present',
+      duration: 'June 2023 - Feb 2024',
       details: 'Impact driving force behind the development of a cutting-edge JavaScript framework, serving as a robust wrapper over jQuery and AJAX to streamline UI configuration widgets. Managed critical operational tasks and addressed on-demand support requests from tenant applications, safeguarding against any mission-critical application outages stemming from the workflow engine. Worked collaboratively with Business Analysts and Quality Assurance professionals in analyzing requirements from existing documentation, including liaising with 6 architects to design and implement tailored technical cloud solutions. Crafted J2EE backend code and executed comprehensive unit tests, ensuring alignment with specified acceptance criteria and compliance requirements.'
     },
     {
