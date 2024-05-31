@@ -66,6 +66,9 @@
             },
             "development": {
               "buildTarget": "updated_portfolio:build:development"
+            },
+            "options":{
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
