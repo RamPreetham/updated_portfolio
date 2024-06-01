@@ -5,5 +5,5 @@ import { routes } from './app.routes';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withRouterConfig({scrollPositionRestoration:'enabled'})), provideClientHydration(), provideHttpClient(withFetch()), importProvidersFrom(BrowserModule)]
+  providers: [provideRouter(routes), provideClientHydration(), provideHttpClient(withFetch()), importProvidersFrom(BrowserModule)]
 };

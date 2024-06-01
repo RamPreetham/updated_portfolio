@@ -13,16 +13,22 @@ export class ExperienceComponent {
   heading = "Experienced Full Stack Developer Crafting Innovative Solutions for the Digital Age.."
   experiences = [
     {
+      company: 'Outlier',
+      position: 'AI Code Expert',
+      duration: 'Jan 2024 - Present',
+      details: 'As a versatile software developer, I excel in solving complex coding challenges by developing functional and optimized code across multiple programming languages, including Python, Java, JavaScript, SQL, C/C++, and HTML/CSS. I focus on optimizing code for maximum performance and efficiency while ensuring reliability through robust test cases. My expertise extends to crafting high-quality generative prompts for AI model inputs, utilizing advanced generative AI techniques. I specialize in utilizing and fine-tuning Large Language Models (LLMs) to enhance the quality and relevance of generated code responses. This involves a rigorous assessment of AI-generated code, including human-readable summaries and output predictions, to ensure accuracy and effectiveness.My responsibilities encompass developing efficient algorithms, optimizing system performance, and leveraging AI technologies to improve response quality. My work ensures that AI-generated solutions are not only technically sound but also practical and reliable for real-world applications.'
+    },
+    {
+      company: 'Eranova AI',
+      position: 'Software Developer',
+      duration: 'Mar 2024 - May 2024',
+      details: 'As a seasoned web application developer, I excel in creating dynamic and responsive web applications utilizing the Django framework, along with HTML, CSS, and JavaScript. My expertise includes developing and implementing Ajax functions to enable dynamic and interactive web experiences.I have architected and designed a sophisticated SharePoint Syncing application, leveraging AWS components such as S3 for scalable storage, AWS Lambda for serverless computing, and Autoscaling for dynamic resource management. My role also involved managing the migration of applications from Azure to AWS, ensuring seamless transitions with optimized performance and minimal downtime.In addition to cloud-based application development, I have implemented advanced data warehousing solutions using Snowflake, designing and managing various schemas to support the Eranova project. This project utilizes Large Language Models (LLMs) for efficient and accurate structured and unstructured data searches. My contributions have significantly enhanced data retrieval capabilities and overall system performance, showcasing my ability to handle complex, large-scale technical projects.'
+    },
+    {
       company: 'Mckesson',
       position: 'Java AWS Developer',
       duration: 'June 2023 - Feb 2024',
       details: 'Impact driving force behind the development of a cutting-edge JavaScript framework, serving as a robust wrapper over jQuery and AJAX to streamline UI configuration widgets. Managed critical operational tasks and addressed on-demand support requests from tenant applications, safeguarding against any mission-critical application outages stemming from the workflow engine. Worked collaboratively with Business Analysts and Quality Assurance professionals in analyzing requirements from existing documentation, including liaising with 6 architects to design and implement tailored technical cloud solutions. Crafted J2EE backend code and executed comprehensive unit tests, ensuring alignment with specified acceptance criteria and compliance requirements.'
-    },
-    {
-      company: 'HSIC',
-      position: 'Java/J2EE Developer',
-      duration: 'Dec 2022 - May 2023',
-      details: 'Played a vital role in ensuring seamless deployment by maintaining and elevating the efficiency of the automated build and deployment process for applications. Worked closely with a dynamic team of 8 engineers, actively participating in all aspects from sprint planning to code shipping. Employed IntelliJ IDEA to meticulously debug and optimize code, resulting in an impressive 42% reduction in turnaround time. Engaged in daily mentoring sessions with 2 senior developers, actively contributing to weekly stand-up meetings.'
     },
     {
       company: 'Accenture',

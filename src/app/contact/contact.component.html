@@ -62,21 +62,17 @@
       <div class="column right">
         <div id="container-contact">
           <div class="contact-form">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <form action="https://formsubmit.co/2b651ad20e21a114f17717975eea4774" method="POST">
               <label for="name">Name</label>
-              <input type="text" required="">
+              <input type="text" name="name"required ng-model='config.test'>
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required="">
+              <input type="email" id="email" name="email" required ng-model='config.test'>
               <label for="message">Message:</label>
-              <textarea id="message" name="message" required=""></textarea>
-              <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+              <textarea id="message" name="message" required ng-model='config.test'></textarea>
+              <button type="submit" >Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
