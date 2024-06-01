@@ -24,6 +24,8 @@ interface Tools{
 
 
 export class SkillsComponent {
+
+  skill_heading="These are my major skills and tools that I have been  working with..";
   frontendskills: FrontendSkill[] = [
     {name:'HTML' , experience:'Experienced'},
     {name:'CSS' , experience:'Experienced'},

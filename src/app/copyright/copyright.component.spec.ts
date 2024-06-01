@@ -1,19 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactComponent } from './contact.component';
+import { CopyrightComponent } from './copyright.component';
 
-
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('CopyrightComponent', () => {
+  let component: CopyrightComponent;
+  let fixture: ComponentFixture<CopyrightComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent]
+      imports: [CopyrightComponent]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(ContactComponent);
+    
+    fixture = TestBed.createComponent(CopyrightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

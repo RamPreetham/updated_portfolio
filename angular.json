@@ -66,6 +66,9 @@
             },
             "development": {
               "buildTarget": "updated_portfolio:build:development"
+            },
+            "options":{
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -93,8 +96,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
         }
