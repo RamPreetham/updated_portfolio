@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Hosting Application in Github server:
+
+For Hosting webapplication in Github to Github server we need to generate the git pages of the web application repository.
+
+Commands to make github pages live and running:
+
+1.npm install gh-pages --save-dev
+2.ng build --base-href "https://RamPreetham.github.io/updated_portfolio/"
+3.npx angular-cli-ghpages --dir=dist/updated_portfolio/browser
