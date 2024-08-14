@@ -9,7 +9,13 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.home{
+  position: fixed;
+  right: 0%;
+  fill: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
+  scroll-padding-inline-end: auto;
 
+}
 .header .heading {
   text-decoration: none;
   font-size: 1.8em;
